@@ -1,24 +1,22 @@
-# README
+Create an animal
+Post http://127.0.0.1:3000/animals/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+{
+    "common_name": "Cat",
+    "scientific_binomial": "Felis Domestica"
+}
+{"id":2,"common_name":"Cat","scientific_binomial":"Felis Domestica","created_at":"2022-12-13T21:27:29.799Z","updated_at":"2022-12-13T21:27:29.799Z"}
 
-Things you may want to cover:
+Update an animal
+Patch - http://127.0.0.1:3000/animals/1
+Updated - Capitalized dog--> Dog 
+          Capitalized canis lupus-->Canis Lupus
 
-* Ruby version
+"id":1,"common_name":"Dog","scientific_binomial":"Canis Lupus","created_at":"2022-12-13T19:40:07.898Z","updated_at":"2022-12-13T21:21:14.518Z"}
 
-* System dependencies
+Remove and animal
+Delete - http://127.0.0.1:3000/animals/1
+Removed id:1
+Delete
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+"id":1,"common_name":"Dog","scientific_binomial":"Canis Lupus","created_at":"2022-12-13T19:40:07.898Z","updated_at":"2022-12-13T21:21:14.518Z"}
