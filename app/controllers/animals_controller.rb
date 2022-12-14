@@ -30,7 +30,7 @@ class AnimalsController < ApplicationController
     def update
         animal = Animal.find(params[:id])
         animal.update(animal_params)
-        if animal.valid?
+        if animal.valid?ca
         render json:animal
         else
         render json: animal.errors
